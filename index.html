@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="vi-vn" lang="vi-vn">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+	<meta name="robots" content="index, follow" />
+  <meta name="revisit-after" content="1 days" />		
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>LỚP HỌC ONLINE | SIU | Email Password Recovery</title>
+  <meta name="keywords" content="LỚP HỌC ONLINE | SIU | Email Password Recovery" />
+  <meta name="description" content="LỚP HỌC ONLINE | SIU | Email Password Recovery" />
+  <meta name="copyright" content="Khoa Công nghệ thông tin - SIU" />
+  <meta name="author" content="Khoa Công nghệ thông tin - SIU" />
+  <link rel="shortcut icon" href="http://www.siu.edu.vn/App_Themes/Default/images/favicon.ico" type="image/x-icon"/>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome-animation.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="container-fluid">
+    <div class="row" id="content">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="image/bg.jpg" width="100%" alt="cuocduasosiu2019">
+            <div>
+              <p class="text3"><i class="fa fa-cog fa-spin"></i> Sinh viên đăng nhập lại email sau 01 ngày kể từ lúc gửi thông tin.</p>
+              <p class="text3"><i class="fa fa-cog fa-spin"></i> Mật khẩu mặc định: <b>1234567890</b></p>
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <img src="image/logo.png" alt="logosiu" width="50%" height="50%" style="display: block; margin-left: auto; margin-right: auto;">
+            </div>
+            <div class="row">
+              <div class="col-md-12" id="text1">HỖ TRỢ LỚP HỌC ONLINE</div>
+              <div class="col-md-12" id="text2">ĐĂNG KÝ KHÔI PHỤC MẬT KHẨU EMAIL</div>
+            </div>
+            <div class="row">
+              <div class="card" id="cardform">
+                <div class="card-body">
+                  <form id="register-form">
+                    <div class="form-group">
+                      <label for="InputFullName"><i class="fa fa-user-ninja"></i> Họ và tên</label>
+                      <input type="text" class="form-control" name="HoVaTen" placeholder="Nhập họ và tên của bạn" required autofocus>
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="InputID"><i class="fa fa-id-badge"></i> Mã số sinh viên</label>
+                        <input type="text" class="form-control" name="MSSV" placeholder="Nhập mã số sinh viên của bạn" required>
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="InputClass"><i class="fa fa-users"></i> Lớp đang học</label>
+                        <input type="text" class="form-control" name="Lop" placeholder="Nhập lớp của bạn" required>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="InputEmail"><i class="fa fa-envelope-open-text"></i> Địa chỉ Email</label>
+                        <input type="email" class="form-control" name="Email" aria-describedby="emailHelp" placeholder="Nhập địa chỉ email cần khôi phục (@siu.edu.vn)" required>
+                    </div>
+                    <div class="g-recaptcha" data-sitekey="6LeOUbwUAAAAAPn6jVkHy4uqHehPIIlj-zAgABvn" data-callback="enableBtn"></div>
+                    <small id="emailHelp" class="form-text text-muted">Thông tin cá nhân của bạn sẽ không được chia sẻ.</small>
+                    <div id="btnsubmit">
+                      <button type="submit" id="submit-form" class="btn btn-success"><i class="fa fa-bell faa-ring animated"></i> Gửi thông tin</button>
+                    </div>
+                  </form>
+                  <div class="modal fade" id="SuccessModal" tabindex="-1" role="dialog" aria-labelledby="SuccessModal" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <img src="image/success.gif" width="100%">
+                            </div>
+                            <div class="col-md-8">
+                              <p style="color: red; font-weight: bold; text-align: justify;">Chúc mừng! Bạn đã gửi thông tin thành công!</p>
+                              <p style="text-align: justify;">Sinh viên vui lòng đăng nhập lại email sau 01 ngày kể từ lúc gửi thông tin.</p>
+                              <p style="text-align: justify;">Username: [họ tên sinh viên][khoá]@siu.edu.vn | Password: 1234567890</p>
+                              <p style="text-align: justify;">Mọi thắc mắc, các bạn vui lòng liên hệ: <a href="tel:0943993527">094 399 3527</a> (thầy Văn Công Thanh Tùng).</p>
+                              <p>Trân trọng!</p>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Đóng</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal fade" id="FailModal" tabindex="-1" role="dialog" aria-labelledby="FailModal" aria-hidden="true">
+                    <div class="modal-dialog modal-lg" role="document">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          <div class="row">
+                            <div class="col-md-4">
+                              <img src="image/fail.gif" width="100%">
+                            </div>
+                            <div class="col-md-8">
+                              <p style="color: red; font-weight: bold;">Ops! Đã có lỗi xảy ra, bạn đăng ký lại nhé!</p>
+                              <p>Nếu lỗi vẫn tiếp tục xảy ra, các bạn vui lòng liên hệ email: <a href="mailto:nguyenphuoc@siu.edu.vn">nguyenphuoc@siu.edu.vn</a> (Hồng Phước).</p>
+                              <p>Trân trọng!</p>
+                            </div>
+                          </div>
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-success" data-dismiss="modal">Đóng</button>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="footer">
+            Powered by Khoa Công nghệ thông tin - SIU | Phát triển bởi <a href="https://fb.com/phuocntmh" target="_blank" style="color: #000">Phước Nguyễn</a>.
+          </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-1.12.1.js" integrity="sha256-VuhDpmsr9xiKwvTIHfYWCIQ84US9WqZsLfR4P7qF6O8=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+</body>
+</html>
